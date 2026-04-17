@@ -1,5 +1,6 @@
 import express, { type Request, type Response } from 'express'
 import dotenv from 'dotenv'
+import fetch from 'node-fetch'
 import type { ConsultaPagoRequest, ConsultaPagoResponse } from './types'
 
 dotenv.config()
