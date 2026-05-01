@@ -30,3 +30,28 @@ export interface ConsultaPagoResponse {
     mod: string;
     num: number;
 }
+
+export interface RefreshPasswordRequest {
+    Dni: string;
+    Pass: string;
+    PassNew: string;
+}
+
+export interface RefreshPasswordResponse {
+    code: number;
+    mensaje: string;
+    mod: string;
+}
+
+export interface RefreshTokenRequest {
+    refresh_token: string;
+}
+
+export interface RefreshTokenResponse {
+    code: number;
+    expireDate: number;
+    mensaje: string;
+    mod: string;
+    refresToken: string;
+    token: string;
+}
